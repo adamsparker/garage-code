@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before
+*::after {
+    box-sizing: border-box;         /* Regular */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+}
+
+
+::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+}
+
+p {
+    margin:0;
+    padding:0;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* GENERAL */
+
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* LINKS & BUTTONS */
+
+.link {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.awards-link {
+    display: flex;
+    align-items: center;
+    color: #FFAB19;
+}
+
+.awards-link::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 15px;
+    background: url(../assets/icons/wheat.svg) left no-repeat;
+    margin: 0 5px;
+}
+
+.awards-link::after {
+    margin: 0 5px;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 15px;
+    background: url(../assets/icons/wheat.svg) left no-repeat;
+    -webkit-transform: scaleX(-1);
+}
+
+.button {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.course-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #E1E1E1;
+    color: #000000;
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 0.3em 1em;
+    margin-right: 1em;
+}
+
+.black-bg {
+    color: #E1E1E1;
+    background-color: #000000;
+    border-color: #000000;
+}
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0;
+}
+
+.header__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+/* COURSE-NAV */
+
+.course-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.course-icon {
+    margin-right: 10px;
+}
