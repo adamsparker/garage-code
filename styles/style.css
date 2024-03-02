@@ -33,7 +33,7 @@ a {
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 2em;
 
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
@@ -60,6 +60,20 @@ body {
 .title {
     font-size: 3em;
     line-height: 1em;
+}
+
+.title-mid {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section-title {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.bold {
+    font-weight: 900;
 }
 
 /* LINKS & BUTTONS */
@@ -168,3 +182,175 @@ body {
     background-size: 40%;
 }
 
+/* SUB-BANNER */
+
+.sub-banner {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5em;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    padding: 3em;
+}
+
+.sub-icon {
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+#banner-bg1 {
+    background: url(../assets/banner-image__book.png)  bottom right no-repeat #F3F3F3;
+    background-size: 50%;
+    margin: 1em 0;
+    background-position: 110% -250%;
+
+}
+
+#banner-bg2 {
+    background: url(../assets/banner-image__puzzle.png) right no-repeat #F3F3F3;
+    background-size: 50%;
+    background-position: 110% -150%;
+    margin: 1em 0;
+}
+
+#banner-bg3 {
+    background: url(../assets/banner-image__trophy.png) right no-repeat #F3F3F3;
+    background-size: 20%;
+    background-position: 70%;
+    margin: 1em 0;
+}
+
+
+.half-banner {
+    width: 40%;
+}
+
+.sub-banner__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtitle-mid {
+    margin-top: 3em;
+    font-size: 1em;
+    line-height: 1em;
+    max-width: 80%;
+    color: #616161;
+}
+
+/* COURSE-BANNER*/
+
+.course-banner {
+    background: url(../assets/course-image__web.png) center top no-repeat #8080FF;
+    background-size: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2em;
+    margin-bottom: 3em;
+}
+
+.course-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-text__inner {
+    display: flex;
+}
+
+.course-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.course-opacity {
+    opacity: 60%;
+}
+
+.course-text {
+    margin-left: 3em;
+}
+
+.course-top {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8em;
+    max-width: 60%;
+}
+
+.capsule-button {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.233), rgba(255, 255, 255, 0.205));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.233);
+    color: #000000;
+    font-weight: 500;
+    border-radius: 100px;
+    padding: 0.8em;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.capsule-black {
+    background: none;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+}
+
+/* COURSE-BANNER (DESIGN) */
+
+.design-course {
+    background: url(../assets/course-image__design.png) right top no-repeat #C780FF;
+    background-size: 60%;
+}
+
+/* COURSE-BANNER (3D) */
+
+.course-3D {
+    background: url(../assets/course-image__3D.png) right top no-repeat #e9be97;
+    background-size: 60%;
+}
+
+/* COURSE-BANNER (Tadjwid) */
+
+.tadjwid {
+    background: url(../assets/course-image__tadjwid.png) right top no-repeat #75BC7B;
+    background-size: 60%;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 3em 6em;
+    border-radius: 20px;
+    margin: 2em 0;
+    width: 100;
+}
+
+.footer-text__inner {
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.footer-link {
+    font-size: 14px;
+    font-weight: 700;
+    color: #616161;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: 600;
+}
