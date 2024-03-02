@@ -320,8 +320,8 @@ body {
 /* COURSE-BANNER (Tadjwid) */
 
 .tadjwid {
-    background: url(../assets/course-image__tadjwid.png) right top no-repeat #75BC7B;
-    background-size: 60%;
+    background: url(../assets/course-image__tadjwid.png) center top no-repeat #75BC7B;
+    background-size: 50%;
 }
 
 /* FOOTER */
