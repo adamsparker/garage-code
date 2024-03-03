@@ -251,7 +251,12 @@ body {
     border-radius: 20px;
     padding: 2em;
     margin-bottom: 3em;
+    transition: .2s all;
 }
+
+/* .web-banner:hover, .design-course:hover, .course-3D:hover, .tadjwid:hover   {
+    transform: translate(-0px, -20px);
+} */
 
 .course-bottom {
     display: flex;
@@ -340,6 +345,7 @@ body {
 .footer-text__inner {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     line-height: 2em;
     text-transform: uppercase;
 }
@@ -353,4 +359,18 @@ body {
 .footer-title {
     font-size: 14px;
     font-weight: 600;
+}
+
+.disclaimer {
+    font-size: 8px;
+    color: #616161;
+    line-height: normal;
+}
+
+.social__inner {
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+    
 }
