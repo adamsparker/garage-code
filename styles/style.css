@@ -67,6 +67,11 @@ body {
     font-weight: 600;
 }
 
+.left-title {
+    text-align: left;
+    margin: 2em 0   ;
+}
+
 .section-title {
     margin: 2em 0;
     text-align: center;
@@ -370,6 +375,67 @@ body {
 .social__inner {
     margin-top: 10px;
 }
+
+/* ACCORDION */
+
+.accordion {
+    background-color: #F3F3F3;
+    font-weight: 600;
+    font-family: "Noto Sans", sans-serif;
+    color: #444;
+    cursor: pointer;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: none;
+  }
+
+  .accordion-container {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #F3F3F3;
+  }
+
+  .active{
+    background-color: #F3F3F3;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0em 1em;
+    background-color: #F3F3F3;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .subtitle-accordion {
+    font-size: 16px;
+    margin: 2em 0em;
+    max-width: 50%;
+  }
+
+
 
 @media (max-width: 1000px) {
     
