@@ -33,8 +33,7 @@ a {
 
 body {
     padding: 0;
-    margin: 2em;
-
+    margin: 0em;
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
 
@@ -143,6 +142,14 @@ body {
     background-color: #000000;
     border-color: #000000;
 }
+
+/* ADVER */
+
+.adver {
+    text-align: center; 
+    background-color: #FFAB19;
+}
+
 /* HEADER */
 
 .header {
@@ -160,6 +167,10 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 50%;
+}
+
+.header-link {
+    margin-right: 2em;
 }
 
 /* COURSE-NAV */
