@@ -218,16 +218,14 @@ body {
 
 #banner-bg1 {
     background: url(../assets/banner-image__book.png)  bottom right no-repeat #F3F3F3;
-    background-size: 50%;
+    background-size: 60%;
     margin: 1em 0;
-    background-position: 110% -250%;
 
 }
 
 #banner-bg2 {
     background: url(../assets/banner-image__puzzle.png) right no-repeat #F3F3F3;
-    background-size: 50%;
-    background-position: 110% -150%;
+    background-size: 60%;
     margin: 1em 0;
 }
 
