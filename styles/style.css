@@ -546,4 +546,9 @@ body {
         background-size: 40%;
         background-position: bottom right;
     }
+
+    .subtitle-accordion {
+        padding: 1.5em;
+        max-width: unset;
+    }
 }
