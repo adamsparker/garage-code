@@ -298,7 +298,7 @@ body {
 }
 
 .course-subtitle {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     text-transform: uppercase
 }
@@ -469,7 +469,7 @@ body {
     }
 
     .title {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .header {
@@ -481,6 +481,11 @@ body {
         width: 100%;
         margin: 1em 0;
     }
+
+    .link {
+        font-size: 12px;
+    }
+
 
     .header-button__inner {
         display: none;
@@ -502,10 +507,16 @@ body {
 
     .footer {
         flex-direction: column;
+        padding: 3em;
     }
 
     .footer-logo {
         align-self: flex-start;
+    }
+
+    .footer-link {
+        font-size: 12px;
+        line-height: 20px;
     }
 
     .footer-text__inner {
@@ -536,9 +547,13 @@ body {
         margin: 2em 0;
     }
 
+    .capsule-button {
+        font-size: 12px;
+    }
+
     .course-bottom {
         flex-direction: column;
-        margin-top: 5em;
+        margin-top: 3em;
         align-items: flex-start;
     }
 
@@ -549,6 +564,10 @@ body {
 
     .subtitle-accordion {
         padding: 1.5em;
+        max-width: unset;
+    }
+
+    .subtitle-mid {
         max-width: unset;
     }
 }
