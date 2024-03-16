@@ -464,7 +464,7 @@ body {
 
 @media (max-width: 1000px) {
     .course-button {
-        margin: 5px;
+        margin: 0px 5px 5px 0px;
         font-size: 12px;
     }
 
@@ -502,7 +502,8 @@ body {
     }
 
     .course-nav {
-        justify-content: center;
+        margin-top: 2em;
+        justify-content: flex-start;
     }
 
     .footer {
