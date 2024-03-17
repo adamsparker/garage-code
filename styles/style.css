@@ -162,6 +162,10 @@ body {
 
 /* FORMS */
 
+.form {
+    display: none;
+}
+
 .form-bg-blur {
     position: fixed;
     height: 100%;
