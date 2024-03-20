@@ -171,7 +171,7 @@ body {
     height: 100%;
     width: 100%;
     backdrop-filter: blur(10px);
-    background-color: rgba(46, 44, 44, 0.643);
+    background-color: rgba(0, 0, 0, 0.700);
     z-index: 900;
 }
 
