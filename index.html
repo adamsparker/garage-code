@@ -12,11 +12,11 @@
     
 <!-- FORMS -->
 
-    <div class="form">
+    <div class="form" id="formWeb">
         <div class="form-bg-blur"></div>
         <div class="form__inner">
             <div class="form-top">
-                <button class="close-button"></button>
+                <button onclick="closeModal()" class="close-button"></button>
                 <div class="form-text__inner">
                     <h2 class="title forms-title">ЗАЯВКА НА КУРС</h2>
                     <p class="forms-subitle"># ВЕБ РАЗРАБОТКА</p>
@@ -156,7 +156,7 @@
                     </div>
                     
                 </div>
-                <a href="#" class="button">записаться</a>
+                <a href="#" onclick="openWeb()" class="button">записаться</a>
             </div>
 
         </section>
@@ -198,7 +198,7 @@
                     </div>
                     
                 </div>
-                <a href="#" class="button">записаться</a>
+                <a href="#" class="button ">записаться</a>
             </div>
         </section>
 
@@ -237,7 +237,7 @@
                     </div>
                     
                 </div>
-                <a href="#" class="button">записаться</a>
+                <a href="#" class="button ">записаться</a>
             </div>
         </section>
 
@@ -440,6 +440,22 @@
 </div>
 
 <script src="scripts/main.js"></script>
+
+<script>
+    const formWeb = document.getElementById('formWeb');
+    var forms = document.getElementsByClassName("form");
+ 
+    function openWeb() {
+        event.preventDefault();
+        formWeb.style.display = 'flex';
+    }
+    
+    function closeModal() {
+        for (var i = 0; i < forms.length; i++) {
+          forms[i].style.display = "none";
+        }   
+    }
+    </script>
 
 </body>
 </html>

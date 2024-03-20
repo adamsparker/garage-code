@@ -182,7 +182,7 @@ body {
     transform: translate(-50%, -50%);
     position: fixed;
     background-color: #ffffff;
-    color: #000000;
+    color: #ffffff;
     z-index: 1000;
     min-width: 350px;
 }
@@ -192,9 +192,9 @@ body {
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-    background: #2D7DD2;
+    background: url(../assets/images/forms-web.png) center no-repeat #2D7DD2;
     min-height: 200px;
-    background-size: 50%;
+    background-size: cover;
     border-radius: 20px 20px 0px 0px;
     padding: 2em;
 }
@@ -306,7 +306,8 @@ label {
     border-radius: 20px;
     margin: 3em 0;
     padding: 2em;
-    background: url(../assets/main-banner.png) bottom right no-repeat, #75BC7B;
+    /* background: url(../assets/main-banner.png) bottom right no-repeat, #75BC7B; */
+    background:  #75BC7B;
     background-size: 40%;
 }
 
