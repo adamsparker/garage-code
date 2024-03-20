@@ -192,12 +192,11 @@ body {
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-    background: url(../assets/images/forms-web.png) center no-repeat #2D7DD2;
     min-height: 200px;
-    background-size: cover;
     border-radius: 20px 20px 0px 0px;
     padding: 2em;
 }
+
 
 .close-button {
     align-self: flex-end;
@@ -255,6 +254,31 @@ label {
 
 .breaker {
     color: #ffffff;
+}
+
+.f_web-top {
+    background: url(../assets/images/forms-web.png) center no-repeat #2D7DD2;
+    background-size: cover;
+}
+
+.f_design-top {
+    background: url(../assets/images/forms-design.png) center no-repeat #DC6ACF;
+    background-size: cover;
+}
+
+.f_3D-top {
+    background: url(../assets/images/forms-3D.png) center no-repeat #ff6e39;
+    background-size: cover;
+}
+
+.f_Tadjwid-top {
+    background: url(../assets/images/forms-Tadjwid.png) center no-repeat #75BC7B;
+    background-size: cover;
+}
+
+.f_English-top {
+    background: url(../assets/images/forms-english.png) center no-repeat #DF2935;
+    background-size: cover;
 }
 
 /* HEADER */
