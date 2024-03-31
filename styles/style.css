@@ -60,6 +60,7 @@ body {
 
 .subtitle {
     margin: 2em 0;
+    max-width: 35%;
 }
 
 .title {
@@ -314,6 +315,7 @@ label {
 .course-nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 
@@ -330,9 +332,8 @@ label {
     border-radius: 20px;
     margin: 3em 0;
     padding: 2em;
-    /* background: url(../assets/main-banner.png) bottom right no-repeat, #75BC7B; */
-    background:  #75BC7B;
-    background-size: 40%;
+    background: url(../assets/main-banner.png) bottom right no-repeat, #75BC7B;
+    background-size: 35%;
 }
 
 /* SUB-BANNER */
@@ -624,6 +625,8 @@ label {
     }
 
     .course-nav {
+        display: flex;
+        justify-content: center;
         margin-top: 2em;
         justify-content: flex-start;
     }
@@ -700,5 +703,14 @@ label {
 
     .breaker {
         display: none;
+    }
+
+    .main-banner {
+        background-size: 60%;
+        background-position: 120% bottom;
+    }
+
+    .subtitle {
+        max-width: 60%;
     }
 }
