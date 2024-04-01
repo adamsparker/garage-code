@@ -329,10 +329,10 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    background: url(../assets/main-banner.png) bottom right no-repeat, #75BC7B;
     border-radius: 20px;
     margin: 3em 0;
     padding: 2em;
-    background: url(../assets/main-banner.png) bottom right no-repeat, #75BC7B;
     background-size: 35%;
 }
 
