@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/petrov-sans-trial');
 
 *,
 *::before
@@ -39,12 +39,14 @@ a {
 body {
     padding: 0;
     margin: 0em;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Petrov Sans-Trial', sans-serif;
     font-optical-sizing: auto;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+
+    background-color: #E2E4E7;
 }
 
 .container {
@@ -98,14 +100,15 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
+
+    
 }
 
 .awards-link {
     display: flex;
     align-items: center;
-    color: #FFAB19;
 }
-
+/* 
 .awards-link::before {
     content: '';
     display: block;
@@ -123,7 +126,7 @@ body {
     height: 15px;
     background: url(../assets/icons/wheat.svg) left no-repeat;
     -webkit-transform: scaleX(-1);
-}
+} */
 
 .button {
     background-color: #000000;
@@ -140,12 +143,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid #E1E1E1;
+    background-color: white;
     color: #000000;
     border-radius: 50px;
     font-size: 14px;
     padding: 0.3em 1em;
     margin-right: 1em;
+
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .black-bg {
@@ -154,9 +159,14 @@ body {
     border-color: #000000;
 }
 
+.menu-button {
+    display: none;
+}
+
 /* ADVER */
 
 .stroke-banner {
+    display: none;
     text-align: center; 
     background-color: #FFAB19;
 }
@@ -242,7 +252,7 @@ label {
 .forms-button {
   background-color: #000000;
   text-transform: uppercase;
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Satoshi', sans-serif;
   border: none;
   color: white;
   border-radius: 8px;
@@ -256,6 +266,7 @@ label {
 .breaker {
     color: #ffffff;
 }
+
 
 .f_web-top {
     background: url(../assets/images/forms-web.png) center no-repeat #2D7DD2;
@@ -329,11 +340,13 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: url(../assets/main-banner.png) bottom right no-repeat, #75BC7B;
+    background: url(../assets/main-banner.png) bottom right no-repeat, #cacaca;
     border-radius: 20px;
     margin: 3em 0;
     padding: 2em;
-    background-size: 35%;
+    background-size: 60%;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* SUB-BANNER */
@@ -394,8 +407,7 @@ label {
 /* COURSE-BANNER*/
 
 .course-banner {
-    background: url(../assets/course-image__web.png) right center no-repeat #2D7DD2;
-    background-size: 30%;
+    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -432,6 +444,10 @@ label {
 
 .course-text {
     margin-right: 3em;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.233), rgba(255, 255, 255, 0.205));
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 12px;
 }
 
 .course-top {
@@ -448,38 +464,47 @@ label {
     font-size: 14px;
     border-radius: 100px;
     padding: 0.45em 0.85em;
-    margin-right: 8px;
     margin-bottom: 8px;
+
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 
 
 /* COURSE-BANNER (DESIGN) */
 
+.web-banner {
+    background: url(../assets/web.png) right bottom no-repeat;
+    background-size: 40%;
+}
+
 .design-course {
-    background: url(../assets/course-image__design.png) right center no-repeat #DC6ACF;
-    background-size: 30%;
+    background: url(../assets/design.png) right bottom no-repeat;
+    background-size: 50%;
 }
 
 /* COURSE-BANNER (3D) */
 
 .course-3D {
-    background: url(../assets/course-image__3D.png) right center no-repeat #ff6e39;
-    background-size: 30%;
+    background: url(../assets/3D.png) right bottom no-repeat;
+    background-size: 25%;
+    border: 1px solid black;
 }
 
 /* COURSE-BANNER (Tadjwid) */
 
 .tadjwid {
-    background: url(../assets/course-image__tadjwid.png) right center no-repeat #75BC7B;
-    background-size: 30%;
+    background: url(../assets/tadjwid.png) right bottom no-repeat;
+    background-size: 40%;
+    border: 1px solid black;
 }
 
 /* COURSE-BANNER (English) */
 
 .english {
-    background: url(../assets/course-image__english.png) center right no-repeat #DF2935;
-    background-size: 30%;
+    background: url(../assets/english.png) right bottom no-repeat;
+    background-size: 40%;
+    border: 1px solid black;
 }
 
 /* FOOTER */
@@ -529,7 +554,7 @@ label {
 .accordion {
     background-color: #F3F3F3;
     font-weight: 600;
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Satoshi', sans-serif;
     color: #444;
     cursor: pointer;
     padding: 1.5em;
@@ -603,6 +628,7 @@ label {
     .header__inner {
         width: 100%;
         margin: 1em 0;
+        display: none;
     }
 
     .link {
@@ -628,7 +654,6 @@ label {
         display: flex;
         justify-content: center;
         margin-top: 2em;
-        justify-content: flex-start;
     }
 
     .footer {
@@ -671,6 +696,7 @@ label {
 
     .course-text__inner {
         margin: 2em 0;
+        display: none;
     }
 
     .capsule-button {
@@ -681,6 +707,7 @@ label {
         flex-direction: column;
         margin-top: 3em;
         align-items: flex-start;
+        gap: 15px;
     }
 
     .web-banner, .design-course, .course-3D, .tadjwid, .english {
@@ -706,11 +733,20 @@ label {
     }
 
     .main-banner {
-        background-size: 60%;
-        background-position: 120% bottom;
+        background: url(../assets/main-banner-mobile.png) bottom right no-repeat, #cacaca;
+        background-size: 50%;
+
     }
 
     .subtitle {
         max-width: 60%;
+    }
+
+    .menu-button {
+        display: block;
+    }
+    
+    .course-main {
+        display: none;
     }
 }
