@@ -457,8 +457,7 @@ label {
 }
 
 .capsule-button {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.233), rgba(255, 255, 255, 0.205));
-    backdrop-filter: blur(10px);
+    background-color: #E8EAEC;
     color: #000000;
     font-weight: 500;
     font-size: 14px;
