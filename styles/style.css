@@ -698,7 +698,7 @@ label {
 
 .rating-list {
     margin: 2em 0;
-    height: 40vh;
+    margin-bottom: 4em;
 }
 
 .list-row {
@@ -856,13 +856,7 @@ label {
         
     }
 
-    .rating-list {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 50vh;
-    }
-
+  
     .rating-banner {
         background-size: 200%;
         text-align: center;
