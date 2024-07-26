@@ -93,6 +93,10 @@ body {
     font-weight: 900;
 }
 
+.golden {
+    color: #e49920;
+}
+
 /* LINKS & BUTTONS */
 
 .link {
@@ -100,8 +104,24 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
+    position: relative;
+    transition: .1s all;
+}
 
-    
+.l-highlight::after {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    content: '';
+    display: block;
+    height: 8px;
+    width: 8px;
+    background-color: #75BC7B;
+    border-radius: 100%;
+}
+
+.link:hover {
+    color: #75BC7B;
 }
 
 .awards-link {
@@ -607,7 +627,89 @@ label {
     max-width: 50%;
   }
 
+/* RATING */
 
+.rating-subtitle, .rating-title {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.rating-subtitle {
+    max-width: 50%;
+}
+
+.rating-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rating-text__inner {
+    margin: 5em 0em;
+}
+
+.rating-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../assets/2.jpg) center center no-repeat;
+    background-size: 100%;
+    padding: 6em 3em;
+    border-radius: 20px;
+    color: white;
+    opacity: 90%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: .2s background-size;
+}
+
+.rating-banner:hover {
+    background-size: 110%;
+}
+
+.rb-title, .rb-subtitle {
+    text-shadow: #000000 1px 0 10px;
+}
+
+.rb-subtitle {
+    margin: 10px 0;
+    font-size: 2rem;
+    max-width: 100%;
+}
+
+.info-row__inner {
+    margin: 2em 0;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    font-size: 1.5em;
+    border-bottom: 1px dotted #a5a5a5;
+    color: #444;
+}
+
+.rating-logo {
+    margin-top: 2em;
+    width: 100%;
+    height: 30px;
+}
+
+.rating-list {
+    margin: 2em 0;
+    height: 40vh;
+}
+
+.list-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #a5a5a5;
+}
+
+
+
+/* MEDIA */
 
 @media (max-width: 1000px) {
     .course-button {
@@ -747,5 +849,23 @@ label {
     
     .course-main {
         display: none;
+    }
+
+    .golden {
+        font-size: 16px;
+        
+    }
+
+    .rating-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    .rating-banner {
+        background-size: 200%;
+        text-align: center;
+        line-height: 1.5em;
     }
 }
