@@ -341,6 +341,12 @@ label {
     margin-right: 2em;
 }
 
+.mobile-menu {
+    display: none;
+    justify-content: space-around;
+    width: 100%;
+}
+
 /* COURSE-NAV */
 
 .course-nav {
@@ -712,6 +718,15 @@ label {
 /* MEDIA */
 
 @media (max-width: 1000px) {
+
+    .mobile-menu {
+        display: flex;
+    }
+    
+    .mobile-disable-logo {
+        display: none;
+    }
+
     .course-button {
         margin: 0px 5px 5px 0px;
         font-size: 12px;
@@ -722,7 +737,7 @@ label {
     }
 
     .header {
-        flex-direction: column;
+        justify-content: center;
         margin-bottom: 0;
     }
 
