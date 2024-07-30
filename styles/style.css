@@ -73,6 +73,7 @@ body {
 .title-mid {
     font-size: 24px;
     font-weight: 600;
+    line-height: 1em;
 }
 
 .title-icon {
@@ -385,6 +386,7 @@ label {
     background-color: #F3F3F3;
     border-radius: 20px;
     padding: 3em;
+    gap: 30px;
 }
 
 .sub-icon {
@@ -396,38 +398,102 @@ label {
 #banner-bg1 {
     background: url(../assets/banner-image__book.png)  bottom right no-repeat #F3F3F3;
     background-size: 80%;
-    margin: 1em 0;
 
 }
 
 #banner-bg2 {
     background: url(../assets/banner-image__puzzle.png) right no-repeat #F3F3F3;
     background-size: 60%;
-    margin: 1em 0;
+    gap: 15px;
 }
 
 #banner-bg3 {
     background: url(../assets/banner-image__trophy.png) right no-repeat #F3F3F3;
     background-size: 20%;
     background-position: 70%;
-    margin: 1em 0;
+    margin: 15px 0;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.half-banner {
-    width: 40%;
+.banner-icon {
+    width: 30px;
+    height: 30px; 
 }
+
 
 .sub-banner__inner {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .subtitle-mid {
-    margin-top: 3em;
     font-size: 1em;
     line-height: 1em;
     max-width: 80%;
     color: #616161;
+}
+
+/* ED-INFO */
+
+.ed-info {
+    display: flex;
+    gap: 15px;
+    
+}
+
+.ei-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ei-left__row {
+    display: flex;
+    gap: 15px;
+}
+
+.ei-left-card {
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 3em;
+    width: 100%;
+}
+
+.ei-right-card{
+    background-color: #F3F3F3;
+    gap: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+.ei-card1 {
+    background: url(../assets/ed-1.webp) center right no-repeat, #F3F3F3;
+    background-size: 50%;
+}
+
+.ei-card2 {
+    background: url(../assets/ed-2.webp) center right no-repeat, #F3F3F3;
+    background-size: 30%;
+}
+
+.ei-card3 {
+    background: url(../assets/ed-3.webp) center right no-repeat, #F3F3F3;
+    background-size: 30%;
+}
+
+.ei-card4 {
+    background: url(../assets/ed-4.webp) center bottom no-repeat, #F3F3F3;
+    background-size: 40%;
 }
 
 /* COURSE-BANNER*/
@@ -719,6 +785,22 @@ label {
 
 @media (max-width: 1000px) {
 
+    .ed-info, .ei-left__row{
+        flex-wrap: wrap;
+    }
+
+    .ei-right-card {
+        padding: 3em;
+        height: unset;
+        align-items: flex-start;
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .ei-card4 {
+        background-position: right bottom;
+    }
+
     .mobile-menu {
         display: flex;
     }
@@ -838,6 +920,10 @@ label {
 
     .subtitle-mid {
         max-width: unset;
+    }
+
+    .ei-sub {
+        max-width: 50%;
     }
 
     .label__inner {
