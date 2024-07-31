@@ -34,6 +34,28 @@ a {
     text-decoration: none;
 }
 
+/* LENNIS */
+
+html.lenis, html.lenis body {
+    height: auto;
+  }
+  
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
 /* GENERAL */
 
 body {
@@ -288,32 +310,6 @@ label {
     color: #ffffff;
 }
 
-
-.f_web-top {
-    background: url(../assets/images/forms-web.png) center no-repeat #2D7DD2;
-    background-size: cover;
-}
-
-.f_design-top {
-    background: url(../assets/images/forms-design.png) center no-repeat #DC6ACF;
-    background-size: cover;
-}
-
-.f_3D-top {
-    background: url(../assets/images/forms-3D.png) center no-repeat #ff6e39;
-    background-size: cover;
-}
-
-.f_Tadjwid-top {
-    background: url(../assets/images/forms-Tadjwid.png) center no-repeat #75BC7B;
-    background-size: cover;
-}
-
-.f_English-top {
-    background: url(../assets/images/forms-english.png) center no-repeat #DF2935;
-    background-size: cover;
-}
-
 /* HEADER */
 
 .header {
@@ -367,7 +363,7 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background: url(../assets/main-banner.png) bottom right no-repeat, #cacaca;
+    background: url(../assets/main-banner.webp) bottom right no-repeat, #cacaca;
     border-radius: 20px;
     margin: 3em 0;
     padding: 2em;
@@ -395,32 +391,15 @@ label {
     height: 24px;
 }
 
-#banner-bg1 {
-    background: url(../assets/banner-image__book.png)  bottom right no-repeat #F3F3F3;
-    background-size: 80%;
-
-}
-
-#banner-bg2 {
-    background: url(../assets/banner-image__puzzle.png) right no-repeat #F3F3F3;
-    background-size: 60%;
-    gap: 15px;
-}
-
-#banner-bg3 {
-    background: url(../assets/banner-image__trophy.png) right no-repeat #F3F3F3;
-    background-size: 20%;
-    background-position: 70%;
-    margin: 15px 0;
-    flex-direction: column;
-    gap: 15px;
-}
-
 .banner-icon {
     width: 30px;
     height: 30px; 
 }
 
+#banner-bg3 {
+    flex-direction: column;
+    margin-top: 15px;
+}
 
 .sub-banner__inner {
     display: flex;
@@ -476,7 +455,7 @@ label {
     text-align: center;
 }
 
-.ei-card1 {
+/* .ei-card1 {
     background: url(../assets/ed-1.webp) center right no-repeat, #F3F3F3;
     background-size: 50%;
 }
@@ -494,7 +473,7 @@ label {
 .ei-card4 {
     background: url(../assets/ed-4.webp) center bottom no-repeat, #F3F3F3;
     background-size: 40%;
-}
+} */
 
 /* COURSE-BANNER*/
 
@@ -565,19 +544,19 @@ label {
 /* COURSE-BANNER (DESIGN) */
 
 .web-banner {
-    background: url(../assets/web.png) right bottom no-repeat;
+    background: url(../assets/web.webp) right bottom no-repeat;
     background-size: 40%;
 }
 
 .design-course {
-    background: url(../assets/design.png) right bottom no-repeat;
+    background: url(../assets/design.webp) right bottom no-repeat;
     background-size: 50%;
 }
 
 /* COURSE-BANNER (3D) */
 
 .course-3D {
-    background: url(../assets/3D.png) right bottom no-repeat;
+    background: url(../assets/3D.webp) right bottom no-repeat;
     background-size: 25%;
     border: 1px solid black;
 }
@@ -585,7 +564,7 @@ label {
 /* COURSE-BANNER (Tadjwid) */
 
 .tadjwid {
-    background: url(../assets/tadjwid.png) right bottom no-repeat;
+    background: url(../assets/tadjwid.webp) right bottom no-repeat;
     background-size: 40%;
     border: 1px solid black;
 }
@@ -593,7 +572,7 @@ label {
 /* COURSE-BANNER (English) */
 
 .english {
-    background: url(../assets/english.png) right bottom no-repeat;
+    background: url(../assets/english.webp) right bottom no-repeat;
     background-size: 40%;
     border: 1px solid black;
 }
@@ -935,7 +914,7 @@ label {
     }
 
     .main-banner {
-        background: url(../assets/main-banner-mobile.png) bottom right no-repeat, #cacaca;
+        background: url(../assets/main-banner-mobile.webp) bottom right no-repeat, #cacaca;
         background-size: 50%;
 
     }
