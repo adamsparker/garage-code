@@ -118,6 +118,7 @@ body {
 
 .golden {
     color: #e49920;
+    line-height: 1em;
 }
 
 /* LINKS & BUTTONS */
@@ -342,6 +343,7 @@ label {
     display: none;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 3em;
 }
 
 /* COURSE-NAV */
@@ -640,7 +642,6 @@ label {
   .accordion-container {
     background-color: #F3F3F3;
     border-radius: 10px;
-    margin-bottom: 1em;
   }
   
   .active, .accordion:hover {
@@ -758,6 +759,158 @@ label {
     border-bottom: 1px dotted #a5a5a5;
 }
 
+.row-score, .row-name {
+    font-size: 24px;
+}
+
+.rating-main {
+    background-color: #D3D3D3;
+    padding: 2em;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.rm-title {
+    font-size: 3em;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.rm-subtitle {
+    text-transform: uppercase;
+    margin: 1em 0;
+    color: #525252;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.rm-inner {
+    display: flex;
+    gap: 10px;
+}
+
+.rm-card {
+    background: #EBEBEB;
+    padding: 1em;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rm-card-title {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.rm-card-text {
+    font-size: 14px;
+    line-height: 1em;
+    color: #525252;
+    max-width: 50%;
+}
+
+.rm-card-line {
+    height: 1px;
+    background-color: #D9D9D9;
+    margin: 1em 0;
+}
+
+.rm-card-btn {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #000000;
+}
+
+.rm-card-btn::after {
+    content: '';
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    background: url(../assets/icons/shevron-down.svg) center center no-repeat;
+    background-size: 100%;
+    margin-left: 10px;
+}
+
+.rm-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.rm-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rm-head-inner {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.rm-tag {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #a5a5a5;
+    padding: 5px 6px;
+    border-radius: 4px;
+    color: white;
+    line-height: 0.5em;
+    font-weight: 600;
+}
+
+.rn-head-reward {
+    font-size: 14px;
+    color: #525252;
+    font-weight: 600;
+}
+
+.rm-extras {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    background-color: none;
+    background-color: #E2E4E7;
+    border-top: 1px dashed #A5A5A5;
+    border-radius: 0;
+    padding: 1em 0;
+}
+
+.rating-accordion:hover, .rating-accordion-panel  {
+    background-color: #E2E4E7;
+ 
+}
+
+.rating-accordion-panel {
+    padding: 0;
+}
+
+.rating-accordion-title {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.rating-accordion-subtitle {
+    padding: 0;
+    color: #444444;
+}
 
 
 /* MEDIA */
@@ -897,6 +1050,10 @@ label {
         max-width: unset;
     }
 
+    .rating-accordion-subtitle {
+        padding: 0;
+    }
+
     .subtitle-mid {
         max-width: unset;
     }
@@ -932,8 +1089,8 @@ label {
     }
 
     .golden {
-        font-size: 16px;
-        
+        max-width: 50%;
+        text-align: right;
     }
 
   
@@ -941,5 +1098,31 @@ label {
         background-size: 200%;
         text-align: center;
         line-height: 1.5em;
+    }
+
+    .info-row {
+        align-items: unset;
+    }
+
+    .rm-inner {
+        flex-wrap: wrap;
+    }
+
+    .rm-top {
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    
+    .rm-title {
+        font-size: 2.5em;
+    }
+
+    .rm-subtitle {
+        font-size: 1em;
+    }
+
+    .rn-head-reward {
+        line-height: 1em;
+        text-align: right;
     }
 }
